@@ -40,5 +40,5 @@ body {
             animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
 }
 
-@-webkit-keyframes Loader--animate { 100% { -webkit-transform: scale(.2); } }
-        @keyframes Loader--animate { 100% {         transform: scale(.2); } }
+@-webkit-keyframes Loader--animate { 100% { -webkit-transform: scale(.5); } }
+        @keyframes Loader--animate { 100% {         transform: scale(.5); } }
