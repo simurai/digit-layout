@@ -38,14 +38,13 @@ body {
 }
 
 .Loader-path {
-    opacity: .2;
     -webkit-animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite alternate;
             animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite alternate;
 }
 
-.Loader-path--1 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
-.Loader-path--2 { -webkit-animation-delay: -0.4s; animation-delay: -0.4s; }
-.Loader-path--3 { -webkit-animation-delay:    0s; animation-delay:    0s; }
+.Loader-path--1 { opacity: 1.0;  -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+.Loader-path--2 { opacity: 0.5;  -webkit-animation-delay: -0.4s; animation-delay: -0.4s; }
+.Loader-path--3 { opacity: 0.25; -webkit-animation-delay:    0s; animation-delay:    0s; }
 
-@-webkit-keyframes Loader--animate { 100% { opacity: 1; } }
-        @keyframes Loader--animate { 100% { opacity: 1; } }
+@-webkit-keyframes Loader--animate { 100% { opacity: .1; } }
+        @keyframes Loader--animate { 100% { opacity: .1; } }
