@@ -12,5 +12,13 @@
         "run-tests.html",
         "test"
     ],
-    "bundle": [ "ui/main.reel" ]
+    "bundle": [
+        "ui/main.reel"
+    ],
+    "author": {
+        "name": "simurai",
+        "email": "",
+        "url": ""
+    },
+    "description": "Some starter layouts to be used with the Digit UI set."
 }

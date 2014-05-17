@@ -12,11 +12,43 @@
                 "properties": {
                     "element": {"#": "main"}
                 }
+            },
+            "badge": {
+                "prototype": "digit/ui/badge.reel",
+                "properties": {
+                    "element": {"#": "badge"},
+                    "label": "+",
+                    "value": "0"
+                }
+            },
+            "toggleSwitch": {
+                "prototype": "digit/ui/toggle-switch.reel",
+                "properties": {
+                    "element": {"#": "toggleSwitch"}
+                }
+            },
+            "search": {
+                "prototype": "digit/ui/text-field.reel",
+                "properties": {
+                    "element": {"#": "search"},
+                    "placeholderValue": "Search"
+                }
             }
         }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    
+    <div data-montage-id="main" class="App">
+        <header class="Bar Bar--header">
+            <input data-montage-id="search" class="Search" type="search">
+            <output data-montage-id="badge" class="Badge"></output>
+        </header>
+        <main class="Main"></main>
+        <footer class="Bar Bar--footer">
+            <input data-montage-id="toggleSwitch" class="Toggle" type="checkbox" >
+        </footer>
+    </div>
+    
 </body>
 </html>
