@@ -29,16 +29,21 @@ body {
     display: -webkit-flex;
     display: flex;
 }
-.Loader-spinner {
+.Loader-logo {
     display: block;
     margin: auto;
     width: 100px;
     height: 100px;
-    background: url(../images/digit-icon.svg) no-repeat center center;
-    background-size: 100% auto;
+}
+
+.Loader-logo-path {
     -webkit-animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
             animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
 }
 
-@-webkit-keyframes Loader--animate { 100% { -webkit-transform: scale(.5); } }
-        @keyframes Loader--animate { 100% {         transform: scale(.5); } }
+.Loader-icon-path--3 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+.Loader-icon-path--2 { -webkit-animation-delay: -0.4s; animation-delay: -0.4s; }
+.Loader-icon-path--1 { -webkit-animation-delay:    0s; animation-delay:    0s; }
+
+@-webkit-keyframes Loader--animate { 100% { opacity: .2; } }
+        @keyframes Loader--animate { 100% { opacity: .2; } }
