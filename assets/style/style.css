@@ -36,7 +36,7 @@ body {
     height: 64px;
     border-radius: 32px;
     background: url(../images/digit-icon.svg) no-repeat center center;
-    background-size: 70% auto;
+    //background-size: 70% auto;
     -webkit-animation: Loader--rotate 3.6s linear infinite;
     animation: Loader--rotate 3.6s linear infinite;
 }
