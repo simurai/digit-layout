@@ -66,22 +66,6 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.Main-splash {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: .1;
-    background: url(../../assets/images/icons/icon-128x128.png) no-repeat center center;
-    background-size: 64px;
-}
-
-.is-team .Main-splash {
-    opacity: 0;
-    transition: opacity .2s ease-in;
-}
-
 
 
 
