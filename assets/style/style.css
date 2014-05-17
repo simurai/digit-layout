@@ -7,7 +7,7 @@ html {
     font-family: Avenir, sans-serif;
     color: hsl(212, 72%, 80%);
     fill: currentColor;
-    background: coral;
+    background: currentColor;
     font-size: 16px; /* Spacing of components */
 }
 
