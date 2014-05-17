@@ -1,7 +1,7 @@
-
 /* 
  * This file is reserved for your global style rules. 
  */
+
 
 html {
     height: 100%;
@@ -19,3 +19,30 @@ body {
     height: 100%;
     margin: 0; /* Remove default margin */
 }
+
+
+/* Loader -------------------------------------------- */
+
+.Loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+}
+.Loader-spinner {
+    display: block;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: url(assets/images/icons/icon-128x128.png) no-repeat center center;
+    background-size: 64px;
+    -webkit-animation: Loader--rotate 3.6s linear infinite;
+    animation: Loader--rotate 3.6s linear infinite;
+}
+
+@-webkit-keyframes Loader--rotate { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes Loader--rotate { 100% {         transform: rotate(-360deg); } }
