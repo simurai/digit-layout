@@ -39,8 +39,8 @@ body {
 
 .Loader-path {
     opacity: .2;
-    -webkit-animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite;
-            animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite;
+    -webkit-animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite alternate;
+            animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite alternate;
 }
 
 .Loader-path--1 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
