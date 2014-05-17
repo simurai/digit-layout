@@ -13,6 +13,12 @@
                     "element": {"#": "main"}
                 }
             },
+            "logo": {
+                "prototype": "ui/logo.reel",
+                "properties": {
+                    "element": {"#": "logo"}
+                }
+            },
             "badge": {
                 "prototype": "digit/ui/badge.reel",
                 "properties": {
@@ -41,6 +47,7 @@
     
     <div data-montage-id="main" class="App">
         <header class="Bar Bar--header">
+            <div data-montage-id="logo"></div>
             <input data-montage-id="search" class="Search" type="search">
             <output data-montage-id="badge" class="Badge"></output>
         </header>
