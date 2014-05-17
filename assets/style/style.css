@@ -35,10 +35,10 @@ body {
     width: 100px;
     height: 100px;
     fill: #fff;
-    opacity: .2;
 }
 
 .Loader-path {
+    opacity: .2;
     -webkit-animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
             animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
 }
