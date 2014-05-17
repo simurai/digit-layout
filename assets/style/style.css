@@ -36,14 +36,14 @@ body {
     height: 100px;
 }
 
-.Loader-logo-path {
+.Loader-path {
     -webkit-animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
             animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
 }
 
-.Loader-icon-path--3 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
-.Loader-icon-path--2 { -webkit-animation-delay: -0.4s; animation-delay: -0.4s; }
-.Loader-icon-path--1 { -webkit-animation-delay:    0s; animation-delay:    0s; }
+.Loader-path--3 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+.Loader-path--2 { -webkit-animation-delay: -0.4s; animation-delay: -0.4s; }
+.Loader-path--1 { -webkit-animation-delay:    0s; animation-delay:    0s; }
 
 @-webkit-keyframes Loader--animate { 100% { opacity: .2; } }
         @keyframes Loader--animate { 100% { opacity: .2; } }
