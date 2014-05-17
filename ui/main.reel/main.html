@@ -12,6 +12,27 @@
                 "properties": {
                     "element": {"#": "main"}
                 }
+            },
+            "badge": {
+                "prototype": "digit/ui/badge.reel",
+                "properties": {
+                    "element": {"#": "badge"},
+                    "label": "+",
+                    "value": "0"
+                }
+            },
+            "toggleSwitch": {
+                "prototype": "digit/ui/toggle-switch.reel",
+                "properties": {
+                    "element": {"#": "toggleSwitch"}
+                }
+            },
+            "search": {
+                "prototype": "digit/ui/text-field.reel",
+                "properties": {
+                    "element": {"#": "search"},
+                    "placeholderValue": "Search"
+                }
             }
         }
     </script>
@@ -20,17 +41,12 @@
     
     <div data-montage-id="main" class="App">
         <header class="Bar Bar--header">
-            <div data-montage-id="logo"></div>
             <input class="Search" data-montage-id="search" type="search">
             <output class="Badge" data-montage-id="badge"></output>
         </header>
         <main class="Main">
             <div class="Main-splash"></div>
-            <input class="Puppet" type="checkbox" data-montage-id="checkbox">
-            <input class="Puppet" type="checkbox" data-montage-id="checkbox2">
-            <input class="Puppet" type="checkbox" data-montage-id="checkbox3">
-            <input class="Puppet" type="checkbox" data-montage-id="checkbox4">
-            <input class="Puppet" type="checkbox" data-montage-id="checkbox5">
+            
         </main>
         <footer class="Bar Bar--footer">
             <input class="Toggle" type="checkbox" data-montage-id="toggleSwitch">
