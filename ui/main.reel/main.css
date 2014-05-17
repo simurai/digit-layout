@@ -1,1 +1,108 @@
-.Main {}
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .6s;
+}
+
+.montage-app-loaded .App {
+    opacity: 1;
+}
+
+
+/* Bar ---------------------------------- */
+
+.Bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.Bar--header {
+
+}
+
+.Bar--footer {
+
+}
+
+.Bar > * {
+    margin: 0.4rem;
+}
+
+/* Header ---------------------------------- */
+
+.Badge {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.4;
+    font-weight: 500;
+    text-align: center;  
+    border-radius: 1.25em;
+    border-width: 2px;
+}
+
+.Search {
+    flex: 1;
+    font-family: inherit;
+}
+
+
+
+/* Main ---------------------------------- */
+
+.Main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Main-splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    background: url(../../assets/images/icons/icon-128x128.png) no-repeat center center;
+    background-size: 64px;
+}
+
+.is-team .Main-splash {
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+
+
+
+/* Footer ---------------------------------- */
+
+.Toggle {
+    vertical-align: middle;
+}
+
+.Toggle.montage-ToggleSwitch--checked > .digit-ToggleSwitch-thumb {
+    background-color: hsla(0, 0%, 0%, 0.72);
+}
+
+
+
+/* Responsive ---------------------------------- */
+
+@media (min-width: 500px) and (min-height: 800px) {
+
+    .App {
+        font-size: 2em;
+    }
+
+}
