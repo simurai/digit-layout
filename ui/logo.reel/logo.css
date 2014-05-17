@@ -1,8 +1,9 @@
 .Logo {
-    width: 3.5em;
+    width: 2.5em;
     height: 2.5em;
 }
 
 .Logo-svg {
     fill: inherit;
+    height: 100%;
 }
