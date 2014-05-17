@@ -32,10 +32,10 @@ body {
 .Loader-spinner {
     display: block;
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background: url(../images/digit-icon.svg) no-repeat center center;
-    background-size: 200px auto;
+    background-size: 100% auto;
     -webkit-animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
             animation: Loader--animate 1.2s cubic-bezier(.30, 0, 0, 1) infinite alternate;
 }
