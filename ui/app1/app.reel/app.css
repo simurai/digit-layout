@@ -67,6 +67,25 @@
 }
 
 
+/* Grid ---------------------------------- */
+
+.Grid {
+    padding: 1rem;
+}
+
+.Grid-item {
+    font-size: 3.2em;
+    line-height: 2em;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+
 
 
 /* Footer ---------------------------------- */
