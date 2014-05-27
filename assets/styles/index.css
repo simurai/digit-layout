@@ -106,12 +106,20 @@ li {
 
 iframe {
     display: block;
-    width: 320px;
-    height: 568px;
     margin: 0 auto;
     border: none; 
     resize: both;
     padding: 15px;
+}
+
+iframe.is-phone {
+    width: 320px;
+    height: 568px;
+}
+
+iframe.is-tablet {
+    width: 1024px;
+    height: 768px;
 }
 
 
