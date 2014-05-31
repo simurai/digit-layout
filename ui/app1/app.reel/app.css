@@ -64,6 +64,12 @@
     position: relative;
     -webkit-flex: 1;
     flex: 1;
+}
+
+
+/* Grid ---------------------------------- */
+
+.Grid {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -72,16 +78,9 @@
     justify-content: center;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    padding: 1rem;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-}
-
-
-/* Grid ---------------------------------- */
-
-.Grid {
-    padding: 1rem;
 }
 
 .Grid-item {

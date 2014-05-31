@@ -56,14 +56,14 @@
     font-family: inherit;
 }
 
-
-
-/* Main ---------------------------------- */
-
-.Main {
-    position: relative;
-    -webkit-flex: 1;
+.List {
     flex: 1;
+}
+
+
+/* Grid ---------------------------------- */
+
+.Grid {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -72,16 +72,9 @@
     justify-content: center;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    padding: 1rem;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-}
-
-
-/* Grid ---------------------------------- */
-
-.Grid {
-    padding: 1rem;
 }
 
 .Grid-item {
@@ -96,6 +89,68 @@
     height: 2em;
 }
 
+
+
+/* Main ---------------------------------- */
+
+.Main {
+    position: relative;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+
+/* View ---------------------------------- */
+
+.View-item {
+    display: flex;
+}
+
+.View-item--aside {
+    color: hsla(0,0%,0%,.7);
+    background-color: hsla(0,0%,100%,.7);
+    flex-direction: column;
+}
+
+.View-item--aside > .Bar {
+    background-color: hsla(0,0%,0%,.1);
+}
+
+@media (max-width: 799px) {
+    
+    .View {
+        overflow: hidden;
+    }
+    
+    .View-item {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+    
+    .View-item--main {
+        transform: translate3d(100%,0,0);
+    }
+    
+}
+@media (min-width: 800px) {
+    
+    .View {
+        display: flex;
+    }
+    
+    .View-item {
+        position: relative;
+    }
+    
+    .View-item--main {
+        flex: 1;
+    }
+    
+    .View-item--aside {
+        flex: 0 0 320px;
+    }
+
+}
 
 
 
