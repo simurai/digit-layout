@@ -14,4 +14,4 @@ For example, to use the App 1 (phone) layout:
 6. Delete unused files in folders (e.g., 2.html, ui/app2 etc.).
 7. Edit `ui/app.reel` and add new components.
 
-![phone layout](ui/app1/screenshot.png)
+![phone layout](demo/phone.png)

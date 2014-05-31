@@ -1,0 +1,58 @@
+/* Bar ---------------------------------- */
+
+.Bar {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0.4rem;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.Bar--header {
+
+}
+
+.Bar--footer {
+
+}
+
+.Bar > * {
+    margin: 0.4rem;
+}
+
+
+/* Bar children ---------------------------------- */
+
+.Bar > .Badge {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.4;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 1.25em;
+    border-width: 2px;
+}
+
+.Bar > .Title {
+    -webkit-flex: 1;
+    flex: 1;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Bar > .Search {
+    -webkit-flex: 1;
+    flex: 1;
+    font-family: inherit;
+}
+
+.Bar > .Toggle {
+    vertical-align: middle;
+}
+
+.Bar > .Toggle.montage-ToggleSwitch--checked > .digit-ToggleSwitch-thumb {
+    background-color: hsla(0, 0%, 0%, 0.72);
+}

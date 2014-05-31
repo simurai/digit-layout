@@ -1,0 +1,79 @@
+/* Splitter ---------------------------------- */
+
+.Splitter {
+    background: hsl(0, 0%, 20%);
+}
+
+.Splitter-item {
+    display: -webkit-flex;
+    display: flex;
+    background-color: currentColor;
+}
+
+.Splitter-item--aside {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    color: hsla(0,0%,0%,.7);
+    background-color: hsl(212, 72%, 90%);
+}
+
+.Splitter-item--aside > .Bar {
+    background-color: hsl(212, 72%, 94%);
+    border-bottom: 1px solid hsla(0,0%,0%,.2);
+}
+
+
+@media (max-width: 799px) {
+
+    .Splitter {
+        overflow: hidden;
+    }
+
+    .Splitter-item {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        transition-property: opacity, transform;
+        transition-duration: .4s;
+    }
+
+    .is-detail .Splitter-item--aside {
+        pointer-events: none;
+        opacity: 0;
+        -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);
+        transition-duration: 1s;
+    }
+    
+    .Splitter-item--main {
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0);
+    }
+    
+    .is-detail .Splitter-item--main {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+}
+@media (min-width: 800px) {
+
+    .Splitter {
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .Splitter-item {
+        position: relative;
+    }
+
+    .Splitter-item--main {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+
+    .Splitter-item--aside {
+        -webkit-flex: 0 0 320px;
+        flex: 0 0 320px;
+    }
+
+}

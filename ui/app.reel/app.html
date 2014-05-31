@@ -16,6 +16,18 @@
                 "classList.has('is-detail')": { "<-": "@toggleSwitch.checked" }
             }
         },
+        "header": {
+            "prototype": "/ui/bar.reel",
+            "properties": {
+                "element": {"#": "header"}
+            }
+        },
+        "footer": {
+            "prototype": "/ui/bar.reel",
+            "properties": {
+                "element": {"#": "footer"}
+            }
+        },
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
@@ -50,10 +62,28 @@
                 "element": {"#": "toggleSwitch"}
             }
         },
+        "listHeader": {
+            "prototype": "/ui/bar.reel",
+            "properties": {
+                "element": {"#": "listHeader"}
+            }
+        },
         "list": {
             "prototype": "/ui/list.reel",
             "properties": {
                 "element": {"#": "list"}
+            }
+        },
+        "grid": {
+            "prototype": "/ui/grid.reel",
+            "properties": {
+                "element": {"#": "grid"}
+            }
+        },
+        "splitter": {
+            "prototype": "/ui/splitter.reel",
+            "properties": {
+                "element": {"#": "splitter"}
             }
         }
     }
@@ -61,45 +91,22 @@
 </head>
 <body>
     <div data-montage-id="app" class="App">
-        <header class="Bar Bar--header">
+        <header data-montage-id="header">
             <div data-montage-id="logo"></div>
             <h1 data-montage-id="title" class="Title"></h1>
             <output data-montage-id="badge" class="Badge"></output>
         </header>
-        <main class="Main View">
-            <aside class="View-item View-item--aside">
-                <header class="Bar Bar--header">
-                    <input data-montage-id="search" class="Search" type="search">
+        <main class="Main" data-montage-id="splitter">
+            <aside class="Splitter-item Splitter-item--aside">
+                <header data-montage-id="listHeader">
+                    <input class="Search" data-montage-id="search" type="search">
                 </header>
-                <ul data-montage-id="list" class="List">
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                    <li class="List-item"><label class="Label">Item</label></li>
-                </ul>
+                <ul data-montage-id="list"></ul>
             </aside>
-            <div class="View-item View-item--main Grid">
-                <div class="Grid-item">1</div>
-                <div class="Grid-item">2</div>
-                <div class="Grid-item">3</div>
-                <div class="Grid-item">4</div>
-                <div class="Grid-item">5</div>
-                <div class="Grid-item">6</div>
-            </div>
+            <div class="Splitter-item Splitter-item--main" data-montage-id="grid"></div>
         </main>
-        <footer class="Bar Bar--footer">
-            <input data-montage-id="toggleSwitch" class="Toggle" type="checkbox">
+        <footer class="Footer" data-montage-id="footer">
+            <input class="Toggle" data-montage-id="toggleSwitch" type="checkbox">
         </footer>
     </div>
 </body>
