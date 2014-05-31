@@ -15,3 +15,5 @@ For example, to use the App 1 (phone) layout:
 7. Edit `ui/app.reel` and add new components.
 
 ![phone layout](demo/phone.png)
+
+See [live demo](http://simurai.github.io/digit-layout/)
