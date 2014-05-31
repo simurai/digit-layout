@@ -2,78 +2,98 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>App</title>
-
+    <title>
+        App
+    </title>
     <link rel="stylesheet" href="app.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "app"}
-                }
-            },
-            "logo": {
-                "prototype": "/ui/logo.reel",
-                "properties": {
-                    "element": {"#": "logo"}
-                }
-            },
-            "badge": {
-                "prototype": "digit/ui/badge.reel",
-                "properties": {
-                    "element": {"#": "badge"},
-                    "label": "+",
-                    "value": "0"
-                }
-            },
-            "toggleSwitch": {
-                "prototype": "digit/ui/toggle-switch.reel",
-                "properties": {
-                    "element": {"#": "toggleSwitch"}
-                }
-            },
-            "search": {
-                "prototype": "digit/ui/text-field.reel",
-                "properties": {
-                    "element": {"#": "search"},
-                    "placeholderValue": "Search"
-                }
-            },
-            "list": {
-                "prototype": "digit/ui/list.reel",
-                "properties": {
-                    "element": {"#": "list"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "app"}
+            }
+        },
+        "badge": {
+            "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge"},
+                "label": "+",
+                "value": "0"
+            }
+        },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"}
+            }
+        },
+        "logo": {
+            "prototype": "/ui/logo.reel",
+            "properties": {
+                "element": {"#": "logo"}
+            }
+        },
+        "search": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "search"},
+                "placeholderValue": "Search"
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "value": "Title"
+            }
+        },
+        "toggleSwitch": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggleSwitch"}
             }
         }
+    }
     </script>
 </head>
 <body>
-    
     <div data-montage-id="app" class="App">
         <header class="Bar Bar--header">
             <div data-montage-id="logo"></div>
+            <h1 data-montage-id="title"></h1>
             <output data-montage-id="badge" class="Badge"></output>
         </header>
         <main class="Main View">
             <aside class="View-item View-item--aside">
-                <header class="Bar Bar--header"><input data-montage-id="search" class="Search" type="search"></header>
+                <header class="Bar Bar--header">
+                    <input data-montage-id="search" class="Search" type="search">
+                </header>
                 <div data-montage-id="list" class="List"></div>
             </aside>
             <div class="View-item View-item--main Grid">
-                <div class="Grid-item">1</div>
-                <div class="Grid-item">2</div>
-                <div class="Grid-item">3</div>
-                <div class="Grid-item">4</div>
-                <div class="Grid-item">5</div>
-                <div class="Grid-item">6</div>
+                <div class="Grid-item">
+                    1
+                </div>
+                <div class="Grid-item">
+                    2
+                </div>
+                <div class="Grid-item">
+                    3
+                </div>
+                <div class="Grid-item">
+                    4
+                </div>
+                <div class="Grid-item">
+                    5
+                </div>
+                <div class="Grid-item">
+                    6
+                </div>
             </div>
         </main>
         <footer class="Bar Bar--footer">
-            <input data-montage-id="toggleSwitch" class="Toggle" type="checkbox" >
+            <input data-montage-id="toggleSwitch" class="Toggle" type="checkbox">
         </footer>
     </div>
-    
 </body>
 </html>
