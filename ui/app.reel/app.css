@@ -38,9 +38,10 @@
     margin: 0.4rem;
 }
 
-/* Header ---------------------------------- */
 
-.Badge {
+/* Bar children ---------------------------------- */
+
+.Bar > .Badge {
     width: 2.5em;
     height: 2.5em;
     line-height: 2.4;
@@ -50,11 +51,29 @@
     border-width: 2px;
 }
 
-.Search {
+.Bar > .Title {
+    -webkit-flex: 1;
+    flex: 1;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Bar > .Search {
     -webkit-flex: 1;
     flex: 1;
     font-family: inherit;
 }
+
+.Bar > .Toggle {
+    vertical-align: middle;
+}
+
+.Bar > .Toggle.montage-ToggleSwitch--checked > .digit-ToggleSwitch-thumb {
+    background-color: hsla(0, 0%, 0%, 0.72);
+}
+
+
+/* List ---------------------------------- */
 
 .List {
     flex: 1;
@@ -148,30 +167,6 @@
     
     .View-item--aside {
         flex: 0 0 320px;
-    }
-
-}
-
-
-
-/* Footer ---------------------------------- */
-
-.Toggle {
-    vertical-align: middle;
-}
-
-.Toggle.montage-ToggleSwitch--checked > .digit-ToggleSwitch-thumb {
-    background-color: hsla(0, 0%, 0%, 0.72);
-}
-
-
-
-/* Responsive ---------------------------------- */
-
-@media (min-width: 500px) and (min-height: 800px) {
-
-    .App {
-        //font-size: 2em;
     }
 
 }
