@@ -1,9 +1,13 @@
 /* Grid ---------------------------------- */
 
 .Grid {
+    -webkit-flex: 1;
     flex: 1;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 1rem;
     overflow: auto;
@@ -11,7 +15,8 @@
 }
 
 .Grid-item {
-    flex: 1 0 10rem;
+    -webkit-flex: 1 0 6rem;
+    flex: 1 0 6rem;
     margin: 1rem;
     font-size: 3.2em;
     line-height: 2em;
