@@ -1,19 +1,14 @@
-# Starter layouts - Digit
+# Starter layout - Digit
 
-This repo contains starter layouts for the Digit UI set. You can use these layout components (app.reel) instead of the default Main component in your MontageJS application. 
+This repo contains a starter layout for the Digit UI set. You can use this MontageJS application as an alternative to the one created with minit. It already contains a couple layout components and can be used as a starting point for creating your own application.
 
 ## How to use
 
-For example, to use the App 1 (phone) layout:
-
-1. Clone this repo in your desktop.
-2. Delete `index.html`.
-3. Rename `1.html` to `index.html`.
-4. Move the `ui/app1` folder content up one level: `ui/app1/app.reel` -> `ui/app.reel`.
-5. Change the `mainModule` path in `index.html` to `"mainModule": "ui/app.reel"`.
-6. Delete unused files in folders (e.g., 2.html, ui/app2 etc.).
-7. Edit `ui/app.reel` and add new components.
+1. Fork this repo (top right button).
+2. Rename this repo (eg. `my-app`)
+3. Open `ui/app.reel` and add/remove/edit components to fit your needs.
 
 ![phone layout](demo/phone.png)
 
-See [live demo](http://simurai.github.io/digit-layout/)
+See [demo](http://simurai.github.io/digit-layout/)
+See [responsive demo (resizable)](http://simurai.github.io/digit-layout/demo)
