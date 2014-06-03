@@ -22,8 +22,8 @@
 }
 
 .Splitter-item--aside > .Bar {
-    color: hsl(0, 100%, 100%);
-    background-color: hsla(0, 0%, 0%, 0.3);
+    background-color: hsl(212, 72%, 84%);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
 
