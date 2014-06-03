@@ -93,20 +93,22 @@
     <div data-montage-id="app" class="App">
         <header data-montage-id="header">
             <div data-montage-id="logo"></div>
-            <h1 data-montage-id="title" class="Title"></h1>
-            <output data-montage-id="badge" class="Badge"></output>
+            <h1 data-montage-id="title"></h1>
+            <output data-montage-id="badge"></output>
         </header>
         <main class="Main" data-montage-id="splitter">
             <aside class="Splitter-item Splitter-item--aside">
                 <header data-montage-id="listHeader">
-                    <input class="Search" data-montage-id="search" type="search">
+                    <input data-montage-id="search" type="search">
                 </header>
                 <ul data-montage-id="list"></ul>
             </aside>
-            <main class="Splitter-item Splitter-item--main" data-montage-id="grid"></main>
+            <main class="Splitter-item Splitter-item--main">
+              <div data-montage-id="grid"></div>
+            </main>
         </main>
         <footer class="Footer" data-montage-id="footer">
-            <input class="Toggle" data-montage-id="toggleSwitch" type="checkbox">
+            <input data-montage-id="toggleSwitch" type="checkbox">
         </footer>
     </div>
 </body>

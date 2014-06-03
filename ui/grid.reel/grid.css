@@ -1,6 +1,7 @@
 /* Grid ---------------------------------- */
 
 .Grid {
+    flex: 1;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
