@@ -13,13 +13,17 @@
 .Splitter-item--aside {
     -webkit-flex-direction: column;
     flex-direction: column;
-    color: hsla(0,0%,0%,.7);
-    background-color: hsl(212, 72%, 90%);
+    color: hsl(212, 30%, 30%);
+    background-color: hsl(212, 72%, 80%);
+}
+
+.Splitter-item--main {
+    background-color: hsl(120, 25%, 65%);
 }
 
 .Splitter-item--aside > .Bar {
-    background-color: hsl(212, 72%, 94%);
-    border-bottom: 1px solid hsla(0,0%,0%,.2);
+    color: hsl(0, 100%, 100%);
+    background-color: hsla(0, 0%, 0%, 0.3);
 }
 
 
