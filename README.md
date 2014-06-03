@@ -5,7 +5,7 @@ This repo contains a starter layout for the Digit UI set. You can use this Monta
 ## How to use
 
 1. Fork this repo (top right button).
-2. Rename this repo (eg. `my-app`)
+2. Rename this repo (e.g., my-app).
 3. Open `ui/app.reel` and add/remove/edit components to fit your needs.
 
 ![phone layout](demo/phone.png)
