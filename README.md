@@ -10,6 +10,4 @@ This repo contains a starter layout for the Digit UI set. You can use this Monta
 
 ![phone layout](demo/phone.png)
 
-See [demo](http://simurai.github.io/digit-layout/)
-
-See [responsive demo (resizable)](http://simurai.github.io/digit-layout/demo)
+See [demo (resizable)](http://simurai.github.io/digit-layout/demo)
