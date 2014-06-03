@@ -6,7 +6,10 @@ This repo contains a starter layout for the Digit UI set. You can use this Monta
 
 1. Fork this repo (top right button).
 2. Rename this repo (e.g., my-app).
-3. Open `ui/app.reel` and add/remove/edit components to fit your needs.
+3. It should now appear in the projects list of Montage Studio.
+4. Open it and add/remove/edit components to fit your needs.
+
+Please refer to the [Docs](http://docs.montagestudio.com/montage-studio/) for further help how to use Montage Studio.
 
 ![phone layout](demo/phone.png)
 
