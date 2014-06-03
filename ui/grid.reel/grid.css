@@ -25,3 +25,13 @@
     color: hsl(0, 100%, 100%);
     background-color: hsla(0, 0%, 0%, 0.1);
 }
+
+
+@media (min-width: 800px) {
+
+    .Grid-item {
+        -webkit-flex: 1 0 12rem;
+        flex: 1 0 12rem;
+    }
+
+}
