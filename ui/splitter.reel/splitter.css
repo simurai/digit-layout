@@ -30,6 +30,7 @@
 @media (max-width: 799px) {
 
     .Splitter {
+        position: relative;
         overflow: hidden;
     }
 

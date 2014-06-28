@@ -12,6 +12,11 @@
     opacity: 1;
 }
 
+.Main {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
 @media (min-width: 800px) {
     
     /* Hide Footer on wide screens */
