@@ -18,11 +18,11 @@
 }
 
 .Splitter-item--main {
-    background-color: hsl(120, 25%, 65%);
+    background-color: hsl(144, 43%, 63%);
 }
 
 .Splitter-item--aside > .Bar {
-    background-color: hsl(212, 72%, 84%);
+    background-color: hsla(0,0%,100%, 0.33);
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
