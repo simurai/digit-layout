@@ -17,6 +17,12 @@
 .Grid-item {
     -webkit-flex: 1 0 6rem;
     flex: 1 0 6rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
     margin: 1rem;
     font-size: 3.2em;
     line-height: 2em;
