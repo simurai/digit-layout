@@ -1,0 +1,1 @@
+.App{height:100%;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;opacity:0;transition:opacity .6s}.montage-app-loaded .App{opacity:1}.Main{-webkit-flex:1;flex:1}@media (min-width:800px){.Footer{display:none}}

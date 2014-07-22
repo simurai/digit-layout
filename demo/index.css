@@ -1,0 +1,170 @@
+html {
+    font-family: Avenir, sans-serif;
+    color: hsl(0, 0%, 60%);
+    font-size: 16px; /* Spacing of components */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    font-size: 16px; /* Sizing of components */
+    padding: 2rem 1rem;
+}
+@media (min-width: 600px) {
+    body {
+        padding: 10rem 1rem;
+    }
+}
+
+section {
+}
+
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+}
+
+a:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+a:active {
+    color: hsl(0, 0%, 10%);
+}
+
+
+/* Titles ----------------------------------------------- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    color: hsl(0, 0%, 30%);
+    font-size: 8vw;
+    line-height: 1;
+}
+@media (min-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+h1 .Icon {
+    height: 2.4em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -.2em .5em 0 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 5rem; */;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+
+/* Sections ----------------------------------------------- */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type:    none;
+}
+
+li {
+    margin: 3rem 0;
+}
+@media (min-width: 600px) {
+    li {
+        margin: 10rem 0;
+    }
+}
+
+/* Items ----------------------------------------------- */
+
+.Screenshot {
+    max-width: 100%;
+}
+@media (min-width: 1100px) {
+    .Screenshot {
+        display: none;
+    }
+}
+
+.Resizer {
+    display: none;
+    position: relative;
+}
+@media (min-width: 1100px) {
+    .Resizer {
+        display: inline-block;
+    }
+}
+
+.Resizer:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    bottom: -2px;
+    right: -2px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-width: 0 1px 1px 0;
+    box-shadow: 4px 4px 6px -4px hsl(0, 0%, 85%);
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.Resizer:hover:after {
+    opacity: 1;
+}
+
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: none; 
+    resize: both;
+    padding: 15px;
+}
+
+iframe.is-phone {
+    width: 320px;
+    height: 568px;
+}
+
+iframe.is-tablet {
+    width: 1024px;
+    height: 768px;
+}
+
+
+
+
+/* Info ----------------------------------------------- */
+
+.Info a {
+    margin: 0 1em;
+}
+
+/* Footer ----------------------------------------------- */
+
+.Footer {
+    margin-top: 5rem;
+}
+
+.Footer .Icon {
+    height: 5em;
+    margin-top: 2rem;
+}

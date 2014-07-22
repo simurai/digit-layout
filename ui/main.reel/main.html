@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8" />
+    <title>
+        App
+    </title>
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/montage-serialization">{"owner":{"properties":{"element":{"#":"main"}},"bindings":{"classList.has('is-detail')":{"<-":"@toggleSwitch.checked"}}},"header":{"prototype":"/ui/bar.reel","properties":{"element":{"#":"header"}}},"footer":{"prototype":"/ui/bar.reel","properties":{"element":{"#":"footer"}}},"badge":{"prototype":"digit/ui/badge.reel","properties":{"element":{"#":"badge"},"label":"+","value":"8"}},"logo":{"prototype":"/ui/logo.reel","properties":{"element":{"#":"logo"}}},"search":{"prototype":"digit/ui/text-field.reel","properties":{"element":{"#":"search"},"placeholderValue":"Search"}},"title":{"prototype":"digit/ui/title.reel","properties":{"element":{"#":"title"},"value":"Digit Layout"}},"toggleSwitch":{"prototype":"digit/ui/toggle-switch.reel","properties":{"element":{"#":"toggleSwitch"}}},"listHeader":{"prototype":"/ui/bar.reel","properties":{"element":{"#":"listHeader"}}},"list":{"prototype":"/ui/list.reel","properties":{"element":{"#":"list"}}},"grid":{"prototype":"/ui/grid.reel","properties":{"element":{"#":"grid"}}},"splitter":{"prototype":"/ui/splitter.reel","properties":{"element":{"#":"splitter"}}}}</script>
+</head>
+<body>
+    <div data-montage-id="main" class="App">
+        <header data-montage-id="header">
+            <div data-montage-id="logo"></div>
+            <h1 data-montage-id="title"></h1>
+            <output data-montage-id="badge"></output>
+        </header>
+        <main class="Main" data-montage-id="splitter">
+            <aside class="Splitter-item Splitter-item--aside">
+                <header data-montage-id="listHeader">
+                    <input data-montage-id="search" type="search" />
+                </header>
+                <ul data-montage-id="list"></ul>
+            </aside>
+            <main class="Splitter-item Splitter-item--main">
+              <div data-montage-id="grid"></div>
+            </main>
+        </main>
+        <footer class="Footer" data-montage-id="footer">
+            <input data-montage-id="toggleSwitch" type="checkbox" />
+        </footer>
+    </div>
+
+</body></html>

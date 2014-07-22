@@ -1,0 +1,1 @@
+montageDefine("904c095","ui/bar.reel/bar.html",{text:'<!DOCTYPE html><html><head>\n    <meta charset=utf-8>\n    <link rel=stylesheet href=bar.css>\n    <script type=text/montage-serialization>{"owner":{"properties":{"element":{"#":"bar"}}}}</script>\n</head>\n<body>\n	<div data-montage-id=bar class=Bar>\n        <div data-param=*></div>\n	</div>\n\n\n</body></html>'});
